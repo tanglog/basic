@@ -53,7 +53,6 @@ public class Code01_SelectSort {
         }
     }
 
-
     public static void insertSort2(int[] arr){
         if (arr == null || arr.length < 2){
             return;
