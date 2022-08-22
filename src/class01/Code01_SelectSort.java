@@ -1,7 +1,5 @@
 package class01;
 
-import java.util.function.Predicate;
-
 public class Code01_SelectSort {
     /**
      * 选择排序
