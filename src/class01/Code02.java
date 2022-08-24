@@ -67,6 +67,9 @@ public class Code02 {
         return Math.max(Math.random(), Math.random());
     }
 
+    /**
+     * 从1~5随机到1~7
+     * */
     //lib里的,不可以改
     public static  int f1(){
         return (int) (Math.random() * 5) + 1;
@@ -96,4 +99,21 @@ public class Code02 {
         } while (ans == 0);
         return ans;
     }
+
+    //你只知道,x会以固定的概率返回0,1,但x的内容不知道
+    public static int x(){
+        return Math.random() < 0.84 ? 0 : 1;
+
+    }
+
+    //等概率返回
+    public static int y (){
+        int ans = x();
+        do {
+            ans = x();
+        } while (ans == x());
+        return ans;
+    }
+
+
 }
